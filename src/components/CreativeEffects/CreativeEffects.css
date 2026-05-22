@@ -1,0 +1,82 @@
+.cursor-glow {
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(165, 106, 189, 0.35), transparent 70%);
+  filter: blur(20px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particles span {
+  position: absolute;
+  bottom: -50px;
+  width: 8px;
+  height: 8px;
+  background: #a56abd;
+  border-radius: 50%;
+  opacity: 0.45;
+  animation: floatUp 12s linear infinite;
+}
+
+.particles span:nth-child(odd) {
+  background: #6e3482;
+}
+
+.particles span:nth-child(1) { left: 5%; animation-delay: 0s; }
+.particles span:nth-child(2) { left: 12%; animation-delay: 2s; }
+.particles span:nth-child(3) { left: 20%; animation-delay: 4s; }
+.particles span:nth-child(4) { left: 28%; animation-delay: 1s; }
+.particles span:nth-child(5) { left: 35%; animation-delay: 3s; }
+.particles span:nth-child(6) { left: 42%; animation-delay: 5s; }
+.particles span:nth-child(7) { left: 50%; animation-delay: 2s; }
+.particles span:nth-child(8) { left: 58%; animation-delay: 4s; }
+.particles span:nth-child(9) { left: 66%; animation-delay: 1s; }
+.particles span:nth-child(10) { left: 74%; animation-delay: 3s; }
+.particles span:nth-child(11) { left: 82%; animation-delay: 5s; }
+.particles span:nth-child(12) { left: 90%; animation-delay: 2s; }
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-120vh) scale(1.8);
+  }
+}
+
+.ai-bubble {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 99;
+  padding: 18px 22px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #49225b, #6e3482);
+  color: white;
+  box-shadow: 0 20px 50px rgba(73, 34, 91, 0.35);
+  animation: bubble 2.5s infinite;
+}
+
+.ai-bubble p {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+@keyframes bubble {
+  50% {
+    transform: translateY(-8px);
+  }
+}

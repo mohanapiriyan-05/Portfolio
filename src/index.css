@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+section {
+  padding: 90px 8%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  font-size: 38px;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  color: #64748b;
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+.app,
+section,
+footer {
+  position: relative;
+  z-index: 2;
+}
